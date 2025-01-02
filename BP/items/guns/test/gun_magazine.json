@@ -1,0 +1,12 @@
+{
+    "include": "warfare:gun_magazine_template",
+    "variables": {
+        "icon": "iron_ingot"
+    },
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "warfare:test_magazine"
+        }
+    }
+}

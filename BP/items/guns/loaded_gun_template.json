@@ -1,0 +1,29 @@
+{
+    "is_template": true,
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "warfare:loaded_gun_template",
+            "menu_category": {
+                "category": "none"
+            }
+        },
+        "components": {
+            "minecraft:icon": "${icon}",
+            "minecraft:food": {
+                "can_always_eat": true,
+                "nutrition": 0,
+                "saturation_modifier": 0
+            },
+            "minecraft:use_modifiers": {
+                "use_duration": 10000000
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:tags": {
+                "tags": [
+                    "warfare_gun"
+                ]
+            }
+        }
+    }
+}

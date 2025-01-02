@@ -1,0 +1,15 @@
+{
+    "format_version": "1.21.50",
+    "sound_definitions": {
+        "warfare.ak47.shoot": {
+            "category": "block",
+            "max_distance": 128,
+            "sounds": [
+                {
+                    "name": "sounds/warfare/gun/ak47/shoot",
+                    "volume": 16
+                }
+            ]
+        }
+    }
+}

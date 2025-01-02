@@ -1,0 +1,12 @@
+{
+    "include": "warfare:loaded_gun_template",
+    "variables": {
+        "icon": "ak47"
+    },
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "warfare:loaded_ak47"
+        }
+    }
+}

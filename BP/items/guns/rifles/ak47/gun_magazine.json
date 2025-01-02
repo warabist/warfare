@@ -1,0 +1,12 @@
+{
+    "include": "warfare:gun_magazine_template",
+    "variables": {
+        "icon": "ak47_magazine"
+    },
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "warfare:ak47_magazine"
+        }
+    }
+}

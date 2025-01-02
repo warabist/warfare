@@ -1,0 +1,13 @@
+{
+    "include": "warfare:gun_bullet_template",
+    "variables": {
+        "damage": 8,
+        "knockback": false
+    },
+    "format_version": "1.21.50",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "warfare:ak47_bullet"
+        }
+    }
+}

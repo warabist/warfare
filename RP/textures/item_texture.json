@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "warfare",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "ak47": {
+            "textures": "textures/warfare/items/guns/rifles/ak47/gun"
+        },
+        "ak47_magazine": {
+            "textures": "textures/warfare/items/guns/rifles/ak47/magazine"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "motiwarabist"
+        ],
+        "generated_with": {
+            "bridge": [
+                "2.7.42"
+            ],
+            "dash": [
+                "0.11.7"
+            ]
+        }
+    },
+    "header": {
+        "name": "Warfare v1.0.0",
+        "description": "by motiwarabist",
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ],
+        "uuid": "9e5a9bd1-1bc9-4b81-9cf0-0e01c662a78a",
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "f932114f-02a0-455e-9de0-b0869377252d",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "ea8e0621-f442-4af5-9320-3f1ba501e9e4",
+            "entry": "scripts/index.js",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "d265868d-b2b2-40d5-afcb-678cbd4fca24",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.16.0"
+        }
+    ]
+}

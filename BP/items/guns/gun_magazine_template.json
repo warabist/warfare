@@ -1,0 +1,16 @@
+{
+    "is_template": true,
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "warfare:gun_magazine_template",
+            "menu_category": {
+                "category": "equipment"
+            }
+        },
+        "components": {
+            "minecraft:icon": "${icon}",
+            "minecraft:max_stack_size": 16
+        }
+    }
+}

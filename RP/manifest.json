@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"motiwarabist"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.42"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "Warfare v1.0.0",
+		"description": "by motiwarabist",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "d265868d-b2b2-40d5-afcb-678cbd4fca24",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "969ede5a-9e79-4450-9225-663861fbcba4",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "9e5a9bd1-1bc9-4b81-9cf0-0e01c662a78a",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

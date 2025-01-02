@@ -1,0 +1,47 @@
+{
+  "type": "minecraftBedrock",
+  "name": "Warfare",
+  "namespace": "warfare",
+  "authors": [
+    "motiwarabist"
+  ],
+  "targetVersion": "1.21.50",
+  "description": "by motiwarabist",
+  "experimentalGameplay": {
+    "creationOfCustomBiomes": false,
+    "upcomingCreatorFeatures": false,
+    "enableGameTestFramework": false,
+    "focusTargetCamera": false,
+    "dataDrivenJigsawStructures": false,
+    "aimAssist": false,
+    "educationEdition": false
+  },
+  "bdsProject": false,
+  "packs": {
+    "behaviorPack": "./BP",
+    "resourcePack": "./RP"
+  },
+  "worlds": [
+    "./worlds/*"
+  ],
+  "compiler": {
+    "plugins": [
+      "templater",
+      "generatorScripts",
+      "typeScript",
+      "entityIdentifierAlias",
+      "customEntityComponents",
+      "customItemComponents",
+      "customBlockComponents",
+      "customCommands",
+      "moLang",
+      "formatVersionCorrection",
+      [
+        "simpleRewrite",
+        {
+          "packName": "Warfare"
+        }
+      ]
+    ]
+  }
+}
