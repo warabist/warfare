@@ -20,7 +20,7 @@ export abstract class Gun extends SubscriberAdapter {
      * 銃を登録する
      */
     register(): void {
-        this.subscribeEvent();
+        this.subscribeEvents();
     }
 
     /**
