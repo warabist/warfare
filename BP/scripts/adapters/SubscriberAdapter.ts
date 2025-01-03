@@ -1,6 +1,13 @@
 import * as mc from '@minecraft/server';
 
+/**
+ * 継承しon～をオーバーライド、subscribeEventを実行すればイベントが登録される
+ */
 export abstract class SubscriberAdapter {
+    /**
+     * @remarks
+     * オーバーライドされたon～をイベントとして登録
+     */
     subscribeEvent(): void {
         if (this.onAfterStopUseItem !== SubscriberAdapter.prototype.onAfterStopUseItem) {
             mc.world.afterEvents.itemStopUse.subscribe((eventData) => {

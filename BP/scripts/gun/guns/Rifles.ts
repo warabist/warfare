@@ -1,5 +1,8 @@
 import { AutomaticGun } from './types/index';
 
+/**
+ * ライフルのリスト
+ */
 export class Rifles {
     private static test = new AutomaticGun({
         loadedGunItemId: 'warfare:loaded_test',

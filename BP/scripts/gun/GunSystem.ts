@@ -3,20 +3,35 @@ import { UuidGenerator } from '../utils/index';
 import { AmmoManager } from './managers/index';
 import { Guns } from './guns/index';
 
+/**
+ * 銃のシステム
+ */
 export class GunSystem {
     constructor() { }
 
+    /**
+     * @remarks
+     * システムを開始
+     */
     start(): void {
         this.registerGuns();
         this.initInterval();
     }
 
+    /**
+     * @remarks
+     * 銃を登録
+     */
     private registerGuns(): void {
         for (const gun of Guns.data) {
             gun.register();
         }
     }
 
+    /**
+     * @remarks
+     * 繰り返し処理を初期化
+     */
     private initInterval(): void {
         mc.system.runInterval(() => {
             this.processAllPlayers(this.playGunHoldAnimation);
@@ -27,12 +42,22 @@ export class GunSystem {
         }, 2);
     }
 
+    /**
+     * @remarks
+     * 全プレイヤーに処理を行う
+     * @param callback
+     * プレイヤーごとに行う処理
+     */
     private processAllPlayers(callback: (player: mc.Player) => void): void {
         for (const player of mc.world.getPlayers()) {
             callback(player);
         }
     }
 
+    /**
+     * @remarks
+     * プレイヤーに銃を持った時のアニメーションを再生
+     */
     private playGunHoldAnimation(player: mc.Player): void {
         const equippable = player.getComponent(
             mc.EntityComponentTypes.Equippable
@@ -46,6 +71,10 @@ export class GunSystem {
         });
     }
 
+    /**
+     * @remarks
+     * プレイヤーに手に持っている銃の残段数を表示
+     */
     private showGunAmmoCount(player: mc.Player): void {
         const equippable = player.getComponent(mc.EntityComponentTypes.Equippable) as mc.EntityEquippableComponent;
         const mainhandSlot = equippable.getEquipmentSlot(mc.EquipmentSlot.Mainhand);
@@ -57,6 +86,10 @@ export class GunSystem {
         player.onScreenDisplay.setActionBar(`§l§6 ${ammoCount} / ${capacity}`);
     }
 
+    /**
+     * @remarks
+     * プレイヤーが手に持っている銃にidがなければidをつける
+     */
     private setGunIdToGunItem(player: mc.Player): void {
         const { container } = player.getComponent(
             mc.EntityComponentTypes.Inventory

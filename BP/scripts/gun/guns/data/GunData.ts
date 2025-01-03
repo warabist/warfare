@@ -1,3 +1,6 @@
+/**
+* 基本となる銃のデータ
+*/
 export interface GunData {
     loadedGunItemId: string;
     emptyGunItemId: string;

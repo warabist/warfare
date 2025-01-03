@@ -1,6 +1,19 @@
 import * as mc from '@minecraft/server';
 
+/**
+ * 空の銃、弾のある銃をそれぞれ置き換える
+ */
 export class GunReplacer {
+    /**
+     * @remarks
+     * ロードされた銃を空の銃に置き換える
+     * @param owner
+     * 銃の所有者
+     * @param loadedGunItem
+     * ロードされた銃のItemStack
+     * @param emptyGunItemId
+     * 空の銃のアイテムtypeId
+     */
     static replaceEmptyGun(
         owner: mc.Player,
         loadedGunItem: mc.ItemStack,
@@ -19,6 +32,16 @@ export class GunReplacer {
         equippable.setEquipment(mc.EquipmentSlot.Mainhand, emptyGunItem);
     }
 
+    /**
+     * @remarks
+     * 空の銃をロードされた銃に置き換える
+     * @param owner
+     * 銃の所有者
+     * @param emptyGunItem 
+     * 空の銃のItemStack
+     * @param loadedGunId
+     * ロードされた銃アイテムのtypeId
+     */
     static replaceLoadedGun(
         owner: mc.Player,
         emptyGunItem: mc.ItemStack,
